@@ -37,7 +37,7 @@ const Navbar = () => {
           <li className="cursor-pointer hover:text-[#760a0a]" onClick={() => handleScrollOrNavigate('home')}>Home</li>
           <li className="cursor-pointer hover:text-[#760a0a]" onClick={() => handleScrollOrNavigate('about')}>About Us</li>
           <li className="cursor-pointer hover:text-[#760a0a]" onClick={() => handleScrollOrNavigate('highlights')}>Highlights</li>
-          <li className="cursor-pointer hover:text-[#760a0a]" onClick={() => handleScrollOrNavigate('sponsors')}>Sponsors</li>
+<li className="cursor-pointer hover:text-[#760a0a]" onClick={() => { setIsOpen(false); navigate('/gallery'); }}>Gallery</li>
           <li className="cursor-pointer hover:text-[#760a0a]" onClick={() => handleScrollOrNavigate('contact')}>Contact</li>
         </ul>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
         <ul className="md:hidden mt-4 space-y-2 font-medium text-center text-sm sm:text-base transition-all duration-300">
           <li className="cursor-pointer hover:text-sky-300" onClick={() => handleScrollOrNavigate('home')}>Home</li>
           <li className="cursor-pointer hover:text-sky-300" onClick={() => handleScrollOrNavigate('about')}>About Us</li>
-          <li className="cursor-pointer hover:text-sky-300" onClick={() => handleScrollOrNavigate('sponsors')}>Sponsors</li>
+<li className="cursor-pointer hover:text-sky-300" onClick={() => { setIsOpen(false); navigate('/gallery'); }}>Gallery</li>
           <li className="cursor-pointer hover:text-sky-300" onClick={() => handleScrollOrNavigate('contact')}>Contact</li>
         </ul>
       )}

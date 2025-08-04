@@ -1,8 +1,8 @@
 import React from "react";
 import { FaLightbulb } from "react-icons/fa";
+import G01 from "../assets/G01.jpeg";
 import G1 from "../assets/G1.jpg";
 import G2 from "../assets/G2.jpg";
-import G3 from "../assets/G3.jpg";
 
 const EventOverview = () => {
   return (
@@ -95,7 +95,7 @@ const EventOverview = () => {
               </span>
             </h3>
             <div className="grid grid-cols-1 gap-6">
-              {[G1, G2, G3].map((img, idx) => (
+              {[G01, G1, G2].map((img, idx) => (
                 <div
                   key={idx}
                   className="relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"

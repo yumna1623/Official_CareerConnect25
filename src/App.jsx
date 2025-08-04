@@ -1,5 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 import NavBar from './components/NavBar';
 import HeroSection from './components/HeroSection';
 import AboutEvent from './components/AboutEvent';
@@ -12,6 +16,7 @@ import Contact from './components/Contact';
 import ManagementTeam from './components/ManagementTeam';
 import Footer from './components/Footer';
 import RegisterPage from './pages/RegisterPage';
+import GalleryPage from './pages/GalleryPage';
 
 function App() {
   return (
@@ -38,6 +43,7 @@ function App() {
           />
 
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
         </Routes>
 
         <Footer />
